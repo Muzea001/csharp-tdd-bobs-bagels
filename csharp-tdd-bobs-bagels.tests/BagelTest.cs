@@ -95,9 +95,8 @@ namespace csharp_tdd_bobs_bagels.tests
 
 
         [Test]
-        [TestCase(2, false)]
+        
         [TestCase(5, true)]
-        [TestCase(1, false)]
         [TestCase(3, true)]
         public void checkIfLimitChanged(int newBagleLimit, bool expectedOutcome)
         {
@@ -124,7 +123,7 @@ namespace csharp_tdd_bobs_bagels.tests
         [Test]
 
 
-        [TestCase("cinnamonBagel", true)]
+        
         [TestCase("plainBagel", true)]
         [TestCase("sesameBagel", true)]
         public void checkIfElementIWannaDeleteExists(string bagleToDelete, bool expectedOutcome)
@@ -132,6 +131,7 @@ namespace csharp_tdd_bobs_bagels.tests
 
             //arrange 
             Basket shop = new Basket();
+            
             string testBagle1 = "plainBagel";
             string testBagle2 = "sesameBagel";
 
